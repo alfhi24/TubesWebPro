@@ -1,6 +1,30 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+/* test nav */
+.cf-navbar {
+	width: 100%;
+	border-bottom: 1px solid #eeecf2;
+}
+.input-group input {
+	border: none;
+	font-size: 13px;
+}
+.input-group-prepend .input-group-text {
+	background-color: #fff;
+	border: none;
+}
+.lol:hover .dropdown-menu {
+	display: block;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+.turun:hover .isiturun{
+	display: block;
+}
+/* test nav */
+
 .topnav {
   overflow: hidden;
   background-color: #ffffff;

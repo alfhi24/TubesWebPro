@@ -1,0 +1,60 @@
+.cf-navbar {
+	width: 100%;
+	border-bottom: 1px solid #eeecf2;
+}
+.input-group input {
+	border: none;
+	font-size: 13px;
+}
+.input-group-prepend .input-group-text {
+	background-color: #fff;
+	border: none;
+}
+.lol:hover .dropdown-menu {
+	display: block;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+.turun:hover .isiturun{
+	display: block;
+}
+
+input, select {
+width: 100%;
+margin-bottom: .5rem;
+}
+input[type=submit]{
+background: #333;
+color: white;
+border: 0;
+padding: .5em 1em;
+margin-top: 1rem;
+}
+
+/*link*/
+
+
+/*footer*/
+.foot{
+  background-color: #1e0a3c;
+}
+.eb{
+  margin-top: 20px;
+  margin-left: 23px;
+}
+.du{
+	margin-left: 200px;
+	margin-top: 10px;
+}
+.haha{
+	min-width: 5px;
+}
+.fixed-bottom{
+  font-size: 12px;
+  height : 5.5%;
+}
+
+.justify-content-center{
+  margin-top: 12px;
+}

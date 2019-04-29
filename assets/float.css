@@ -1,0 +1,43 @@
+.form-group {
+position:relative;
+& + .form-group {
+margin-top: 30px;
+}
+}
+.form-label {
+position: absolute;
+font-size: 14px;
+margin-left: 10px;
+top: 10px;
+color: #999;
+background-color: #fff;
+z-index: 10;
+transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+.focused .form-label {
+transform: translateY(-50%);
+font-size: .75em;
+color: #4266b2;
+}
+.form-input {
+position: relative;
+padding: 12px 0px 5px 10px;
+width: 100%;
+outline: 1px;
+border: 1px solid #dbdae3;
+/*box-shadow: 1px 1px 1px 1px #e5e5e5;*/
+transition: box-shadow 150ms ease-out;
+}
+.form-input:focus {
+  border: 1px solid #4266b2;
+}
+.form-input.filled {
+box-shadow: 0 0 0 0 lightgreen;
+}
+.dropdown-menu:hover {
+  display: inline-block;
+}
+.dropdown-item{
+  font-size: 15px;
+  color: #888888;
+}
