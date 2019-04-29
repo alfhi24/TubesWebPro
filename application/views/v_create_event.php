@@ -59,8 +59,9 @@
 
         <div class="wrapper">
           <div class="file-upload">
-            <?php echo $error;?>
+
             <?php echo form_open_multipart('Event/create_event');?>
+            <label for="image">Event Image</label> <br>
             <input type="file" name="userfile" size="20" value="upload"/>
             <br/><br />
             <i class="fa fa-arrow-up"></i>

@@ -48,7 +48,7 @@
 	<div class="jumbotron-fluid" style="background-image: url(<?php echo base_url("assets/sample/image/hero.jpg");?>"); background-size: cover;">
 		<div class="container text-center" style="height: 650px;padding-top: 100px;">
   		<h1 class="text-lg-center" style="color: white; font-size: 75pt;">We're setting the world's stage for live experiences.</h1>
-  		<a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: #D1410C">Create an event</a>
+  		<a class="btn btn-primary btn-lg" href="<?= base_url(); ?>/index.php/event/create_event" role="button" style="background-color: #D1410C">Create an event</a>
 		</div>
 	</div>
 	<!-- TULISAN -->
@@ -138,7 +138,7 @@
 			<h2 style="padding-left: 100px;font-size: 20pt">Extend your reach and find your audience where they discover experiences on partner sites like Facebook, Instagram and Spotify.</h2>
 		</div>
 		<div class="col-8">
-
+			h1><img src="<?php echo base_url("assets/sample/image/gif.gif"); ?>" style="width: 75%;margin-left: 100px"></h1>
 		</div>
 	</div>
 	<!--  CONTAINER KE 7 -->

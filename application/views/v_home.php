@@ -5,17 +5,20 @@
   <link rel="icon" type="image/ico" href="<?php echo base_url("assets/sample/icon.png"); ?>" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="<?php echo base_url("assets/css/indexcss.css"); ?>" />
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/indexcss.css'); ?>" />
   <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
 </head>
 <body>
 
+<!-- Testing nav -->
+
   <div class="topnav" id="myTopnav">
     <img class="logo" src="<?php echo base_url("assets/sample/logo.png"); ?>" alt="" width="115px" height="33px">
-    <a href="#home">Sign In</a>
+    <a href="<?= base_url(); ?>/index.php/signin/index">Sign In</a>
     <a class="createevent" href="<?= base_url(); ?>/index.php/event/create_event">Create Event</a>
     <div class="dropdown">
       <button class="dropbtn">Help <i class="down"></i>
