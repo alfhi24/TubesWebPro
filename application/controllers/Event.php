@@ -19,14 +19,12 @@ class Event extends CI_Controller {
 
   public function create_event() {
 
-    $config['upload_path'] = './uploads/';        //isi dengan nama folder temoat menyimpan gambar
-                $config['allowed_types'] = 'gif|jpg|png';         //isi dengan format/tipe gambar yang diterima
-                $config['max_size'] = '100';       //isi dengan ukuran maksimum yang bisa di upload
-                $config['max_width'] = '1024';       //isi dengan lebar maksimum gambar yang bisa di upload
-                $config['max_height'] = '1024';       //isi dengan panjang maksimum gambar yang bisa di upload
+    $config['upload_path'] = './uploads/';
+                $config['allowed_types'] = 'jpg|png';
+                $config['max_size'] = '100';
+                $config['max_width'] = '1024';
+                $config['max_height'] = '1024';
                 $this->load->library('upload', $config);
-                //lengkapi kondisi berikut
-                // TP NYA LUCUU SEKALIII AHAHAHAHAHA
                 if ( ! $this->upload->do_upload('userfile'))
                 {
                   $error = array('error' => $this->upload->display_errors());
@@ -65,12 +63,22 @@ class Event extends CI_Controller {
                              redirect('event');
                }
 
-
-
   }
 
   public function overview(){
     $this->load->view('v_overview');
+  }
+
+  public function manage(){
+    $this->load->view('v_manage');
+  }
+
+  public function support(){
+        $this->load->view('v_help');
+  }
+
+  public function pricing(){
+    $this->load->view('v_pricing');
   }
 
 }
